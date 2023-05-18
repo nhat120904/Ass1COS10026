@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Enquire" />
+    <meta name="keyword" content="Kirito" />
+    <meta name="author" content="Quang_Phan" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enquire</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css"
+        integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body class="share_body">
+    <header id="pro_home">
+        <div class="heading">
+            <div class="menu_bar">KIRITO</div>
+            <nav>
+                <a href="index.html" class="abc">Home</a>
+                <a href="product.html" class="abc">Product</a>
+                <a href="enquire.html" class="abc">Enquire</a>
+                <a href="about.html" class="abc">About</a>
+                <a href="enhancements.html" class="abc">Enhancements</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="enquiry_form_all">
+            <form method="post" action="https://mercury.swin.edu.au/it000000/formtest.php">
+
+                <div class="enquiry_form_div" id="enquiry_form_left">
+                    <div class="text_holder">
+                        <input type="text" placeholder="Please enter your first name" id="firstname" name="first_name"
+                            autocomplete="off" title="maximum of 25 letters, alphabetical only" maxlength="25"
+                            pattern="[A-Za-z]{1,25}" required>
+                        <label for="firstname">First Name |</label>
+                    </div>
+
+
+                    <div class="text_holder">
+                        <input type="text" placeholder="Please enter your last name" id="lastname" name="last_name"
+                            autocomplete="off" title="maximum of 25 letters, alphabetical only" maxlength="25"
+                            pattern="[A-Za-z]{1,25}" required>
+                        <label for="lastname">Last Name |</label>
+                    </div>
+
+                    <div class="text_holder">
+                        <input type="email" placeholder="myemail@example.com" id="email" autocomplete="off" name="email"
+                            required>
+                        <label for="email">Email Address |</label>
+                    </div>
+
+                    <fieldset class="enquiry_fieldset">
+
+                        <legend>Address</legend>
+
+                        <div class="text_holder">
+                            <input type="text" placeholder="Please enter your street address" id="streetaddress"
+                                name="streetaddress" autocomplete="off" title="maximum of 40 characters" maxlength="40"
+                                required>
+                            <label for="streetaddress">Street Address |</label>
+                        </div>
+
+                        <div class="text_holder">
+                            <input type="text" placeholder="Please enter your suburb or town" id="suburbortown"
+                                name="suburb_or_town" autocomplete="off" title="maximum of 20 characters" maxlength="20"
+                                required>
+                            <label for="suburbortown">Suburb/Town |</label>
+                        </div>
+
+
+                        <div class="text_holder" id="enquiry_form_postcode">
+                            <input type="text" placeholder="4-digit postcode" id="postcode" name="postcode"
+                                autocomplete="off" title="4 digits" maxlength="4" pattern="\d{4}" required>
+                            <label for="postcode">Postcode |</label>
+                        </div>
+                        <div class="enquiry_form_select" id="enquiry_form_states">
+                            <label for="states">STATES |</label>
+                            <select id="states" name="state">
+                                <option value="VIC">VIC</option>
+                                <option value="NSW" selected>NSW</option>
+                                <option value="QLD">QLD</option>
+                                <option value="NT">NT</option>
+                                <option value="WA">WA</option>
+                                <option value="SA">SA</option>
+                                <option value="TAS">TAS</option>
+                                <option value="ACT">ACT</option>
+                            </select>
+                        </div>
+
+                    </fieldset>
+
+                    <div class="text_holder">
+                        <input id="phonenumber" name="phonenumber" placeholder="XXXXXXXXXX" autocomplete="off"
+                            title="maximum of 10 digit" maxlength="10" pattern="\d{1,10}" required>
+                        <label for="phonenumber">Phone Number |</label>
+                    </div>
+                    <p class="enquiry_form_p">PREFERRED CONTACT</p>
+                    <div class="radio">
+                        <input type=radio id="emailcontact" name="preferredcontanct" value="email" checked>
+                        <label for="emailcontact">Email </label>
+
+                        <input type=radio id="post" name="preferredcontanct" value="post">
+                        <label for="post">Post</label>
+
+
+                        <input type=radio id="phone" name="preferredcontanct" value="phone">
+                        <label for="phone">Phone</label>
+                    </div>
+                </div>
+
+
+                <div class="enquiry_form_div" id="enquiry_form_right">
+                    <div class="enquiry_form_select" id="enquiry_form_categories">
+                        <label for="categories">CATEGORIES |</label>
+                        <select id="categories" name="category">
+                            <option value="action">Action</option>
+                            <option value="adventure" selected>Adventure</option>
+                            <option value="roleplaying">Role-playing</option>
+                            <option value="puzzle">Puzzle</option>
+                            <option value="sports">Sports</option>
+                            <option value="strategy">Strategy</option>
+                            <option value="simulation">Simulation</option>
+                            <option value="kids">Kids</option>
+                            <option value="board">Board</option>
+                        </select>
+                    </div>
+
+                    <p class="enquiry_form_p">FEATURES</p>
+
+                    <div class="enquiry_form_checkbox_options">
+                    <div class="enquiry_form_checkbox">
+                        <label for="free">Free Games</label>
+                        <input type="checkbox" id="free" name="feature[]" value="free" checked>
+                    </div>
+                    <div class="enquiry_form_checkbox">
+                        <label for="multiplayer">Multiplayer</label>
+                        <input type="checkbox" id="multiplayer" name="feature[]" value="multiplayer">
+                    </div>
+                    </div>
+
+                    <div class ="enquiry_form_checkbox_options">
+                    <div class="enquiry_form_checkbox">
+                        <label for="mmo">MMORPG</label>
+                        <input type="checkbox" id="mmo" name="feature[]" value="mmorpg">
+                    </div>
+                    <div class="enquiry_form_checkbox">
+                        <label for="vr">VR support</label>
+                        <input type="checkbox" id="vr" name="feature[]" value="vr">
+                    </div>
+                    </div>
+
+                    <div class="enquiry_form_checkbox_options">
+                    <div class="enquiry_form_checkbox">
+                        <label for="cloudsaves">Cloud Saves</label>
+                        <input type="checkbox" id="cloudsaves" name="feature[]" value="cloudsaves">
+                    </div>
+                    <div class="enquiry_form_checkbox">
+                        <label for="singleplayer">Single Player</label>
+                        <input type="checkbox" id="singleplayer" name="feature[]" value="singleplayer">
+                    </div>
+                    </div>
+
+                    <div class="enquiry_form_checkbox_options">
+                    <div class="enquiry_form_checkbox">
+                        <input type="checkbox" id="coop" name="feature[]" value="co-op">
+                        <label for="coop">Co-Operation</label>
+                    </div>
+                    <div class="enquiry_form_checkbox">
+                        <label for="competitive">Competitive</label>
+                        <input type="checkbox" id="competitive" name="feature[]" value="competitive">
+                    </div>
+                    </div>
+
+                    <div class="enquiry_form_checkbox_options">
+                    <div class="enquiry_form_checkbox">
+                        <label for="controllersupport">Controller</label>
+                        <input type="checkbox" id="controllersupport" name="feature[]" value="controllersupport">
+                    </div>
+                    <div class="enquiry_form_checkbox">
+                        <label for="crossplatform">X-Platform</label>
+                        <input type="checkbox" id="crossplatform" name="feature[]" value="crossplatform">
+                    </div>
+                    </div>
+
+                    
+                    <p class="enquiry_form_p"><label for="comment">Special requirements</label></p>
+                    <textarea id="comment" name="comment" rows="5" cols="44" placeholder="Comment..."></textarea>
+
+                    <div class = "enquiry_form_submit">
+                    <input type="submit" value="Submit" />
+                    </div>
+                </div>
+
+
+            </form>
+        </div>
+    </main>
+    <footer class="pro_foo">
+        <p class="pro_foo_mar" >
+            🚨🔥 OMG, brace yourself for some heart-pounding action with the 🔥 hottest action games 🔥 around! Ready to save some 💰💰? Just type in the exclusive coupon code 'LAUDAITINHAI' at checkout, and watch your total drop by a whopping 10% 🤑! But don't wait ⏰, because these deals are flying off the virtual shelves 🛒 faster than you can say "game on" 🎮. So why wait? Get your game face on 😎 and let's do this! 💪
+        </p>
+        <div class="pro_foo_fullheight">
+            <div class="pro_div pro_div1">
+                <div id="footer_logo">
+                    <h3>KIRITO</h3>
+                </div>
+                <div id="footer_slogan">
+                    <p>A full service branding games for gamers.</p>
+                </div>
+                <div id="policy">
+                    <h4>TERMS OF SERVICE</h4>
+                    <h4>PRIVACY POLICY</h4>
+                    <h4>SHOP REFUND POLICY</h4>
+                </div>
+            </div>
+            <div class="pro_div pro_div2">
+                <div id="footer_contact_head">
+                <h4>GET IN TOUCH</h4>
+            </div>
+            <div id="time">
+                <p>MONDAY - FRIDAY</p>
+                <p>10 AM - 4 PM</p>
+            </div>
+            <div id="footer_contact_in4">
+                <h4>CONTACT</h4>
+                <p>FACEBOOK</p>
+                <p>INSTAGRAM</p>
+            </div>
+            </div>
+            <div class="pro_div pro_div3">
+                <div id="subcribe_intro">
+                <h4>JOIN OUR MAILING LIST</h4>
+            </div>
+            <div id="subcribe_form">
+                <div class = "text_box pro_fix1">
+                    <input type="text" name="first_name1" title="maximum of 25 letters, alphabetical only" required>
+                    <label>First Name</label>    
+                </div>
+                <div class = "text_box pro_fix1">
+                    <input type="email" name="email_footer" title="maximum of 25 letters, alphabetical only" required>
+                    <label>Email</label>    
+                </div>
+                <div class = "submit_button">
+                    <input type="submit" value="Submit" />
+                </div>
+            </div>
+            </div>
+            <div class="pro_div pro_div4">
+                <div id="nav_explore">
+                <h4>EXPLORE</h4>
+            </div>
+            <div id="nav_link">
+                <a href="index.html">Home</a>
+                <a href="product.html">Product</a>
+                <a href="enquire.html">Enquire</a>
+                <a href="about.html">About</a>
+                <a href="enhancements.html">Enhancements</a>
+            </div>
+            </div>
+            <a id="buttongobrrr" href="#pro_home">
+                <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 0 24 24" width="24"><path d="M0 0h24v24H0V0z" fill="none"/><path d="M4 12l1.41 1.41L11 7.83V20h2V7.83l5.58 5.59L20 12l-8-8-8 8z"/></svg>
+            </a>
+        </div>
+    </footer>
+</body>
+
+</html>
